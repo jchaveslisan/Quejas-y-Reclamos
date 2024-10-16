@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quejas y Reclamos</title>
+    <script type="text/javascript" src="https://gc.kes.v2.scr.kaspersky-labs.com/7EA5E9BB-55E1-4C31-9C21-4943DDFED2E4/main.js?attr=AruxvDxWesqeBX4kq3yjwKIw3Qy3hTs477tPityXeDmC3WVs2ENNvvBq6cv9NEpuMNozUyZife5IPU5ePTC0zkZ72qsQ22aceCDdSFuFgjf59NJI2mM51FJpGMTukwBXB9NB7oNbUzodJh-W1k2MCdZ--Nz29i4vGB7xA9QaBd-xas-qFumAstmHS_FdirPf-9PN16oeJqga79tytDhQGrCofd-vGjFjhed0vb9nXm1X7T90DAHcDCwhnoE01uWiA-A9U0c9YOt3CxDnYxjsjCmKUFXuYh8CMVjB-rs7Di5Df-ZqJv0rUZZN6xFRu9ai1xb-VN_4SO8H-qHZXOkULzxeJI0DmTXVxaHiH1qA1-I8vPFhS5KLYPjMFpzb42SU9ozK11oKWSynz-IizxXQLcWAQadqKIMXd9gOqU1kWoPntb8AUwqIizcD1yVDYO3aOvlI599C6Om40s94kddMDa8fv2Q_OecqLNlPWXeCcJYBMJgwebDYra-FogxEzksNeMkj2I0ZI5rvhX4p7w3pWd0sqWa44ugnBvfvXRQGuT7d2KLJ7SMxnlxORcZcWmc7W22zBMk-48te_t8VLi55GPmf8w49DEqmvAg-lSoBvVIe8BiX_slJocI1y86vruqpuqf9Fph82QR3FV5QnplJNTQveCu2QhXufdiLDxpPaGeffklt0GPVdDXBnthCWE7LSU7CAlbdx94PyPT2zeCtFuHMMXv7e1wnBMnW-L5Gm9TD_moqgpcSMPXjnjVyoBjpiVpT899A3c7E2a3xvbmH3szEFM4vUnqCUYAdPprWfBqvcLyKEwVJz2Jhh867n1U-tHHdTnkr0njysVXNBQ4kJ8VkpV0b5YYqnk4VFtzSBsg0YzW4VXkV4b7h3w31aea5ogCGiyLNcmZj0fRY4vu1nFno0ZzD-KKCOUJ50qpuPWJnHxFyJE1ccKeJ7-48Ce5bQ9CNfQ3Y3E-sRrdFhdzimNXWCTu39vBvb4uUtEFJarFImxUAgfGz-Pv_pNSJJUQsFVXd5h_b4iEUyaUdKzr1bmppjflT-daWDLAysiUaFZ30XpKOtbuPXdCa-CcGvjK6M26AgqDpuBw_vHWmTrsUCNfgHKSgpIrjM00oiqFjHx-0S-8mk0eOI9ChC3xEXmzAyeuTV8kFBV9Wl0ci2t49GqkIlG59Zu0bxbw_PvK89Umcyc0kd1mjYsC15jn9DbgaksLOq46RLv1BHiwmf2ZwlXkgWQwN8RLcDAUBvK36AglMq9jYAT5zzco7WKJBOwPmhG_LdcACRLgEZB8Q8LEqmNT5HxTBy8ICCbY-4qppmQpkj66GGxPXAQ4X34XhAgjexAwbrE8SRtet1KKMtkdfLCdPw9dM4KtFTNVt8aZc3jwNwixga-XapxOlzNi1_Kod6HI8eJxuZ96duu9NOHtMf-9b1Q4cI-vsTCwIEai8GHn8a-N_B-2Tqz5X8fQmJtmflSZdd8scv8AO1Fc6ecv7vgrJ6YEdsyJZ1CJwMwQGTYqFA6-GYrf3afLNAeDwNCqp0OsnxmNOMchL3rcvMu8XfNpP2pB38A7xMZNZCAJkYkaWn5o22jepxZhsCzwbPhQ30JTOTJysozsbjjTnKned6jgGKmDbfvIbw9V2N63VyJHdixp_FP-hFY2umDb3mdKr_Fb2Yi63yaxdzft99Z3iCg" nonce="fdbd4b9c215275bac2ec0c91616341e5" charset="UTF-8"></script><style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            overflow: hidden;
+        }
+        .screen {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 1s;
+        }
+        .white-screen {
+            background-color: white;
+        }
+        .blue-screen {
+            background-color: #004b87; /* Color del logo */
+            color: white;
+            opacity: 0; /* Inicialmente oculta */
+        }
+        img {
+            max-width: 200px; /* Ajusta el tamaño del logo */
+        }
+        h1 {
+            color: #F05423; /* Título en color naranja */
+            margin: 0; /* Elimina el margen por defecto */
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Primera pantalla (Pantalla blanca con el logo) -->
+    <div class="screen white-screen" id="whiteScreen">
+        <img src="https://i.postimg.cc/g2wsN7cz/lisan-logo.png" alt="Logo de LISAN S.A.">
+    </div>
+
+    <!-- Segunda pantalla (Pantalla azul) -->
+    <div class="screen blue-screen" id="blueScreen">
+        <div>
+            <h1>Quejas y Reclamos</h1>
+            <p>Estimado Cliente,</p>
+            <p>En LISAN S.A, nos comprometemos con la calidad y seguridad. Si ha experimentado algún problema o defecto en alguno de nuestros productos, le pedimos que complete el siguiente formulario para informarnos sobre su queja o reclamo.</p>
+            <p>La información proporcionada será utilizada para investigar el caso, identificar posibles causas y tomar las medidas correctivas necesarias para continuar garantizando la calidad en nuestros productos. Su opinión es muy valiosa para nosotros, con ella seguimos mejorando.</p>
+            <p>Gracias por confiar en LISAN S.A, estamos comprometidos en brindarle productos de la más alta calidad y una pronta resolución de su queja.</p>
+            <p><strong>Confidencialidad:</strong> Toda la información compartida será tratada con estricta confidencialidad y en cumplimiento con las normativas de protección de datos vigentes.</p>
+            <p>Atentamente,<br>LISAN S.A.<br>Departamento de Calidad.</p>
+            <a href="https://www.appsheet.com/start/a4f2dbe8-d1ea-4d8a-9e8c-8f90cb1ded4f" class="button">Ir al formulario</a>
+        </div>
+    </div>
+
+    <script>
+        // Muestra la segunda pantalla después de un tiempo
+        setTimeout(function() {
+            document.getElementById("whiteScreen").style.opacity = '0';
+            document.getElementById("blueScreen").style.opacity = '1';
+        }, 1500); // 1.5 segundos
+    </script>
+
+</body>
+</html>
+
+
+
